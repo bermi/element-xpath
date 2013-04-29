@@ -1,6 +1,6 @@
 {
   "name": "element-xpath",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Consistent xpath for a DOM elements",
   "homepage": "https://github.com/bermi/element-xpath",
   "author": {

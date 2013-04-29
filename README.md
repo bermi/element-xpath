@@ -12,7 +12,7 @@ change depending on the application state.
 
 Include the script
 
-     <script src="https://raw.github.com/bermi/element-xpath/master/dist/element-xpath.min.js" type="text/javascript"></script>
+     <script src="https://raw.github.com/bermi/element-xpath/master/element-xpath.min.js" type="text/javascript"></script>
 
 Display the xpath on the console for clicked elements
 

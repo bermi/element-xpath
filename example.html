@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>element-xpath Example</title>
+  <script src="element-xpath.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <h1>getElementXpath example</h1>
+  <p>Click on page Items to find their xpath</p>
+
+  <div id ="content">
+    <p class="a">
+      <span class="b"><strong>One</strong></span>
+      <span><strong>Two</strong></span>
+    </p>
+    <p class="b">
+      <span class="b"><strong>Three</strong></span>
+      <span><strong id="bar">Four</strong></span>
+    </p>
+  </div>
+  <div id="output"></div>
+
+
+  <script type="text/javascript">
+    document.body.addEventListener("click", function (ev) {
+      getElementXpath(ev.toElement, function (err, xpath) {
+        document.getElementById("output").innerText += "\n" + xpath;
+      });
+    });
+  </script>
+
+</body>
+</html>

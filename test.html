@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>element-xpath Tests</title>
+  <link rel="stylesheet" href="node_modules/mocha/mocha.css" type="text/css" charset="utf-8">
+  <script src="node_modules/mocha/mocha.js" type="text/javascript" charset="utf-8"></script>
+  <script src="node_modules/expect.js/expect.js" type="text/javascript" charset="utf-8"></script>
+  <script>mocha.setup('bdd')</script>
+  <script type="text/javascript">
+    var getElementXpath = "original";
+  </script>
+  <script src="element-xpath.js" type="text/javascript" charset="utf-8"></script>
+  <script src="test.js"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id ="test-markup">
+    <p class="a">
+      <span class="b"><strong>One</strong></span>
+      <span><strong>Two</strong></span>
+    </p>
+    <p class="b">
+      <span class="b"><strong>Three</strong></span>
+      <span><strong id="bar">Four</strong></span>
+    </p>
+  </div>
+  <script type="text/javascript">
+  // Lazy man dom ready
+  setTimeout(function () {
+    if (window.mochaPhantomJS) {
+      mochaPhantomJS.run();
+    } else {
+      mocha.run();
+    }
+    // Click on page items to get more data for the test on the console
+    document.body.addEventListener("click", function (ev) {
+      getElementXpath(ev.toElement, function (err, xpath) {
+        console.log('["' + getElementByXPath(xpath).innerText + '", ', "'" + xpath + "'],");
+      });
+    });
+  }, 200);
+  </script>
+</body>
+</html>

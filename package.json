@@ -1,0 +1,51 @@
+{
+  "name": "element-xpath",
+  "version": "0.0.1",
+  "description": "Consistent xpath for a DOM elements",
+  "homepage": "https://github.com/bermi/element-xpath",
+  "author": {
+    "name": "Bermi Ferrer",
+    "url": "http://bermi.org"
+  },
+  "maintainers": [
+    {
+      "name": "Bermi Ferrer",
+      "url": "http://bermi.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bermi/element-xpath.git"
+  },
+  "keywords": [
+    "browser"
+  ],
+  "bugs": {
+    "url": "https://github.com/bermi/element-xpath/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/bermi/element-xpath.git"
+    }
+  ],
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "expect.js": "~0.2.0",
+    "grunt": "~0.3.x",
+    "mocha-phantomjs": "~2.0.1"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}

@@ -36,9 +36,6 @@
       "url": "git://github.com/bermi/element-xpath.git"
     }
   ],
-  "engines": {
-    "node": "0.8.x"
-  },
   "dependencies": {},
   "devDependencies": {
     "mocha": "~1.9.0",
